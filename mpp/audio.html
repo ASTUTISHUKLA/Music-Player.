@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Audio Player with Download Option</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="audio-player">
+    <!-- Album Art -->
+    <img id="albumArt" class="album-art" src="hazur.jpg" alt="Album Art" />
+
+    <!-- Audio Element -->
+    <audio id="audio" preload="auto" controls>
+      <source src="https://youtu.be/LlbN2V99vuw?si=RgGwseFfAIVbtoU1" type="https://youtu.be/LlbN2V99vuw?si=RgGwseFfAIVbtoU1">
+      Your browser does not support the audio element.
+    </audio>
+
+    <div class="controls">
+      <button id="playPauseBtn" class="play">Play</button>
+      <input type="range" id="seekbar" value="0" step="1" max="100" />
+      <span id="current-time">00:00</span> / <span id="duration">00:00</span>
+    </div>
+
+    <div class="track-info">
+      <span id="trackName">Track Title</span>
+    </div>
+
+    <!-- Download Button -->
+    <div class="download-section">
+      <a id="downloadBtn" href="#" download>
+        <button>Download Track</button>
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
